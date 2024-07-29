@@ -9,6 +9,17 @@
     ]
   },
   "Packages": {
+    "VaTools": {
+      "Package": "VaTools",
+      "Version": "0.2.1",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "VaTools",
+      "RemoteUsername": "suchard-group",
+      "RemoteRef": "v0.2.1",
+      "Requirements": []
+    },    
     "Andromeda": {
       "Package": "Andromeda",
       "Version": "0.6.3",
@@ -339,12 +350,6 @@
     "dplyr": {
       "Package": "dplyr",
       "Version": "1.1.3",
-      "Source": "Repository",
-      "Repository": "CRAN"
-    },
-    "duckdb": {
-      "Package": "duckdb",
-      "Version": "0.10.2",
       "Source": "Repository",
       "Repository": "CRAN"
     },
