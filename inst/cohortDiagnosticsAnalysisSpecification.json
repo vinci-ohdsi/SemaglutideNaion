@@ -161,7 +161,8 @@
       "module": "CohortGeneratorModule",
       "settings": {
         "incremental": true,
-        "generateStats": true
+        "generateStats": true,
+        "refactor": true
       },
       "attr_class": ["ModuleSpecifications", "CohortGeneratorModuleSpecifications"]
     },

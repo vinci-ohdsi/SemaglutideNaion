@@ -8,7 +8,7 @@ Sys.setenv("_JAVA_OPTIONS"="-Xmx4g") # Sets the Java maximum heap space to 4GB
 Sys.setenv("VROOM_THREADS"=1) # Sets the number of threads to 1 to avoid deadlocks on file system
 
 # ENVIRONMENT SETTINGS FOR ACCESSING AWS to build
-# Sys.setenv(DATABASECONNECTOR_JAR_FOLDER="C:/Db")
+Sys.setenv(DATABASECONNECTOR_JAR_FOLDER="C:/Db")
 # DatabaseConnector::downloadJdbcDrivers(dbms = "postgresql") # no longer works
 
 library(Strategus)
@@ -40,21 +40,14 @@ analysisSpecifications <- ParallelLogger::loadSettingsFromJson(
 executionSettings <- Strategus::createCdmExecutionSettings(
   workDatabaseSchema = workDatabaseSchema,
   cdmDatabaseSchema = cdmDatabaseSchema,
-  cohortTableNames = CohortGenerator::getCoh 
-  object = executionSettings,
-  fileName = file.path(outputLocation, "results", databaseName, "executionSettings.json")
+  cohortTableNames = CohortGenerator::getCohortTableNames(cohortTable = cohortTableName),
+  workFolder = file.path(outputLocation, "results", databaseName, "strategusWork"),
+  resultsFolder = file.path(outputLocation, "results", databaseName, "strategusOutput"),
+  minCellCount = minCellCount
 )
-
-
-
-
-# Note: this environmental variable should be set once for each compute node
-# Sys.setenv("INSTANTIATED_MODULES_FOLDER" = file.path(outputLocation, "StrategusInstantiatedModules"))
-# ensureAllModulesInstantiated(analysisSpecifications = analysisSpecifications)
 
 Strategus::execute(
   analysisSpecifications = analysisSpecifications,
   executionSettings = executionSettings,
   connectionDetails = connectionDetails
 )
-

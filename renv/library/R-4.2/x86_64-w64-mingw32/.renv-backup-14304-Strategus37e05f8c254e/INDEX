@@ -1,0 +1,73 @@
+CharacterizationModule
+                        Module for generating cohort characterization
+                        information
+CohortDiagnosticsModule
+                        Module for the development and evaluation of
+                        phenotype algorithms
+CohortGeneratorModule   Module for generating cohorts against an OMOP
+                        CDM
+CohortIncidenceModule   Module for computing incidence rates for
+                        cohorts against an OMOP CDM
+CohortMethodModule      Module for performing new-user cohort studies
+EvidenceSynthesisModule
+                        Module for for combining causal effect
+                        estimates and study diagnostics across multiple
+                        data sites in a distributed study. This
+                        includes functions for performing meta-analysis
+                        and forest plots
+JobContext              Job context holds the elements of the analysis
+                        specification and execution settings necessary
+                        to execute a module.
+PatientLevelPredictionModule
+                        Module for performing patient-level prediction
+                        studies
+SelfControlledCaseSeriesModule
+                        Module for performing Self-Controlled Case
+                        Series (SCCS) analyses in an observational
+                        database in the OMOP Common Data Model.
+StrategusModule         StrategusModule defines the base class for each
+                        HADES Strategus module
+addCharacterizationModuleSpecifications
+                        Add Characterization module specifications to
+                        analysis specifications
+addCohortDiagnosticsModuleSpecifications
+                        Add Cohort Diagnostics module specifications to
+                        analysis specifications
+addCohortGeneratorModuleSpecifications
+                        Add Cohort Generator module specifications to
+                        analysis specifications
+addCohortIncidenceModuleSpecifications
+                        Add Cohort Incidence module specifications to
+                        analysis specifications
+addCohortMethodeModuleSpecifications
+                        Add Cohort Method module specifications to
+                        analysis specifications
+addEvidenceSynthesisModuleSpecifications
+                        Add Evidence Synthesis module specifications to
+                        analysis specifications
+addModuleSpecifications
+                        Add module specifications to analysis
+                        specifications
+addPatientLevelPredictionModuleSpecifications
+                        Add Patient Level Prediction module
+                        specifications to analysis specifications
+addSelfControlledCaseSeriesModuleSpecifications
+                        Add Self Controlled Case Series Module module
+                        specifications to analysis specifications
+addSharedResources      Add shared resources to analysis specifications
+createCdmExecutionSettings
+                        Create CDM execution settings
+createEmptyAnalysisSpecificiations
+                        Create an empty analysis specifications object.
+createResultDataModel   Create Result Data Model
+createResultsDataModelSettings
+                        Create Results Data Model Settings
+createResultsExecutionSettings
+                        Create Results execution settings
+execute                 Execute analysis specifications.
+getDatabaseIdentifierFilePath
+                        Provides the file path to the database
+                        identifier file created by Strategus
+uploadResults           Upload results
+zipResults              Create a zip file with all study results for
+                        sharing with study coordinator

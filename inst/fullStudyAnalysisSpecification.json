@@ -743,9 +743,13 @@
   "moduleSpecifications": [
     {
       "module": "CohortGeneratorModule",
+      "version": "0.4.2-va",
+      "remoteRepo": "github.com",
+      "remoteUsername": "vinci-ohdsi",
       "settings": {
         "incremental": true,
-        "generateStats": true
+        "generateStats": true,
+        "refactor": true
       },
       "attr_class": ["ModuleSpecifications", "CohortGeneratorModuleSpecifications"]
     },

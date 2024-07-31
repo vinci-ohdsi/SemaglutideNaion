@@ -24,18 +24,18 @@ Roxygen: list(markdown = TRUE)
 Encoding: UTF-8
 Config/testthat/edition: 3
 Author: Martijn Schuemie [aut], Anthony Sena [aut, cre], Jamie Gilbert [aut], Observational Health Data Science and Informatics [cph]
-Built: R 4.2.3; ; 2024-07-29 17:46:14 UTC; windows
+Built: R 4.2.3; ; 2024-07-31 00:18:19 UTC; windows
 RemoteType: github
 RemoteHost: api.github.com
 RemoteUsername: OHDSI
 RemoteRepo: Strategus
-RemoteRef: 4b90144536941c290b75f6e81ac1ec0d44a9738c
-RemoteSha: 4b90144536941c290b75f6e81ac1ec0d44a9738c
+RemoteRef: d5a75ffa16b1626d2c4c7e253528c7c0819fc4ea
+RemoteSha: d5a75ffa16b1626d2c4c7e253528c7c0819fc4ea
 GithubHost: api.github.com
 GithubRepo: Strategus
 GithubUsername: OHDSI
-GithubRef: 4b90144536941c290b75f6e81ac1ec0d44a9738c
-GithubSHA1: 4b90144536941c290b75f6e81ac1ec0d44a9738c
+GithubRef: d5a75ffa16b1626d2c4c7e253528c7c0819fc4ea
+GithubSHA1: d5a75ffa16b1626d2c4c7e253528c7c0819fc4ea
 Remotes: ohdsi/Characterization, ohdsi/CohortDiagnostics,
     ohdsi/CohortGenerator, ohdsi/CohortIncidence, ohdsi/CohortMethod,
     ohdsi/PatientLevelPrediction, ohdsi/ResultModelManager,
