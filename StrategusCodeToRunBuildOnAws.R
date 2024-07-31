@@ -2,6 +2,7 @@
 # @date 29 Jul 2024
 
 renv::restore()
+remotes::install_github("OHDSI/Characterization", ref = "drop-null-constraints")
 
 # ENVIRONMENT SETTINGS NEEDED FOR RUNNING Strategus ------------
 Sys.setenv("_JAVA_OPTIONS"="-Xmx4g") # Sets the Java maximum heap space to 4GB

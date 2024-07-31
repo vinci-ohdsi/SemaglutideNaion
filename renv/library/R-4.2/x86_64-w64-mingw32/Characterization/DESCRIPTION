@@ -3,35 +3,40 @@ Type: Package
 Title: Characterizations of Cohorts
 Version: 0.2.0
 Date: 2024-04-03
-Authors@R: c( person("Jenna", "Reps", , "reps@ohdsi.org", role = c("aut", "cre")), person("Patrick", "Ryan", , "ryan@ohdsi.org", role = c("aut")) )
+Authors@R: c(
+	person("Jenna", "Reps", , "reps@ohdsi.org", role = c("aut", "cre")),
+	person("Patrick", "Ryan", , "ryan@ohdsi.org", role = c("aut"))
+	)
 Maintainer: Jenna Reps <reps@ohdsi.org>
 Description: Various characterizations of target and outcome cohorts.
 License: Apache License 2.0
 URL: https://ohdsi.github.io/Characterization,
-    https://github.com/OHDSI/Characterization
+        https://github.com/OHDSI/Characterization
 BugReports: https://github.com/OHDSI/Characterization/issues
 Depends: R (>= 4.0.0)
-Imports: Andromeda, DatabaseConnector (>= 6.3.1), FeatureExtraction (>= 3.5.0),
-    SqlRender (>= 1.9.0), ParallelLogger (>= 3.0.0), checkmate, dplyr, readr,
-    rlang
+Imports: Andromeda, DatabaseConnector (>= 6.3.1), FeatureExtraction (>=
+        3.5.0), SqlRender (>= 1.9.0), ParallelLogger (>= 3.0.0),
+        checkmate, dplyr, readr, rlang
 Suggests: devtools, testthat, Eunomia, kableExtra, knitr, markdown,
-    ResultModelManager, ShinyAppBuilder, shiny, withr
+        ResultModelManager, ShinyAppBuilder, shiny, withr
+Remotes: ohdsi/FeatureExtraction, ohdsi/Eunomia,
+        ohdsi/ResultModelManager, ohdsi/ShinyAppBuilder,
+        ohdsi/DatabaseConnector
 NeedsCompilation: no
 RoxygenNote: 7.3.1
 Encoding: UTF-8
 VignetteBuilder: knitr
-Author: Jenna Reps [aut, cre], Patrick Ryan [aut]
-Built: R 4.2.3; ; 2024-07-29 17:34:46 UTC; windows
 RemoteType: github
 RemoteHost: api.github.com
-RemoteUsername: OHDSI
 RemoteRepo: Characterization
-RemoteRef: v0.2.0
-RemoteSha: aed165f87676d1349d7b84f55a57b5f086acd2a8
-GithubHost: api.github.com
+RemoteUsername: OHDSI
+RemoteRef: drop-null-constraints
+RemoteSha: 4d768ed2c5a690bffb2673b97417c82b60a73de1
 GithubRepo: Characterization
 GithubUsername: OHDSI
-GithubRef: v0.2.0
-GithubSHA1: aed165f87676d1349d7b84f55a57b5f086acd2a8
-Remotes: ohdsi/FeatureExtraction, ohdsi/Eunomia, ohdsi/ResultModelManager,
-    ohdsi/ShinyAppBuilder, ohdsi/DatabaseConnector
+GithubRef: drop-null-constraints
+GithubSHA1: 4d768ed2c5a690bffb2673b97417c82b60a73de1
+Packaged: 2024-07-31 18:32:02 UTC; msuch
+Author: Jenna Reps [aut, cre],
+  Patrick Ryan [aut]
+Built: R 4.2.3; ; 2024-07-31 18:32:03 UTC; windows
